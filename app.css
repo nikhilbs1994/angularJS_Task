@@ -1,0 +1,73 @@
+.banner {
+  display: block;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,.5);
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+
+input {
+  margin: 10px;
+  padding: 7px;
+}
+
+.modal-content {    
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  font-weight: bold;
+  color:red;
+  transition: 0.3s;
+  border-style: solid;
+  padding: 7px;
+  margin-top: 10px;
+  margin: 10px;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+}
